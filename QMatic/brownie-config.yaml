@@ -1,0 +1,25 @@
+dotenv: .env
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.8.1
+compiler:
+  solc:
+    version: 0.8.17
+    optimizer:
+      enabled: true
+      runs: 1000
+    remappings:
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.8.1"
+reports:
+  exclude_contracts:
+    - "ERC20"
+    - "Pausable"
+    - "Ownable"
+networks:
+  development:
+    DEPLOYER_ACCOUNT_NAME: none
+
+  polygon-main:
+    DEPLOYER_ACCOUNT_NAME: ${DEPLOYER_ACCOUNT_NAME}
+
+  polygon-test:
+    DEPLOYER_ACCOUNT_NAME: ${DEPLOYER_ACCOUNT_NAME}

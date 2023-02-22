@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.1",
+    "prettier": "^2.8.4",
+    "prettier-plugin-solidity": "^1.1.2",
+    "solhint": "^3.3.8"
+  },
+  "scripts": {
+    "slither": "slither ./QMatic/contracts --solc-remaps '@openzeppelin=node_modules/@openzeppelin' ",
+    "lint": "solhint -c 'QMatic/.solhint.json' 'QMatic/contracts/*.sol'",
+    "lint:fix": "solhint 'QMatic/contracts/**/*.sol' --fix",
+    "format": "prettier --write ."
+  }
+}
