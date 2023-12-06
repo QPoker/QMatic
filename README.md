@@ -329,7 +329,7 @@ $ yarn run lint
 $ yarn run lint:fix
 ```
 ## Contact Us
-Should you have any technical questions or want to share feedback about our project, feel free to email: m.r.mousavi@qpoker.io Or m.r.mousavi.n@gmail.com. We would love to hear from you!
+Should you have any technical questions or want to share feedback about our project, feel free to email: m.r.mousavi.n@gmail.com. We would love to hear from you!
 
 ## License
 QPoker Contracts are released under the [MIT License](./LICENSE).
